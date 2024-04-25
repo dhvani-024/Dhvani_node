@@ -1,0 +1,225 @@
+:root{
+    --theme-color: #265073;
+    --bg-color: rgba(38, 80, 115,0.7);
+}
+
+*:not(header){
+    margin-top: 10px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+#header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--theme-color);
+    padding: 5px;
+}
+
+.link:hover{
+    border: 1px solid var(--theme-color);
+    border-radius: 5px;
+    background: var(--theme-color);
+    color: white;
+}
+
+.hamburger{
+    display:none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.background{
+    background-image: url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id1201405775?b=1&k=20&m=1201405775&s=170667a&w=0&h=XZ-tUfHvW5IRT30nMm7bAbbWrqkGQ-WT8XSS8Pab-eA=");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    height: 150px;
+    margin-bottom: 100px;
+}
+
+.stack-top{
+    top: 140px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+} 
+
+#myimg .img{
+    border: 1px solid transparent;
+    box-shadow: rgba(34, 28, 28, 0.2) 0px 7px 29px 0px;
+    width:390px;
+    height:310px;
+    margin-left: 10em;
+}
+
+
+.aboutme{
+    color: var(--theme-color);
+    box-shadow: rgba(108, 108, 115, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    padding: 5px;
+    float: right;
+    width: 25em;
+    margin-left: 10em;
+}
+
+.aboutme #description{
+    text-align: left;
+}
+
+.flex-container{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap:nowrap;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1.2fr 0.8fr 0.7fr 0.8fr ;
+    grid-template-areas:
+    "section1" 
+    "details"
+    "skills"
+    "projects"
+    "certifications";
+    grid-gap: 0.5em;
+}
+
+#section1{
+    grid-area:section1;
+}
+
+.details{
+    grid-area:details;
+}
+
+#skills{
+    grid-area:skills;
+}
+
+#projects{
+    grid-area:projects;
+}
+
+
+.center-text{
+    text-align: center;
+}
+
+h4{
+    color: var(--theme-color);
+}
+
+#experience,#skills,#projects,#education{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-size: cover;
+    color: black;
+}
+
+#education{
+    background-color: #B5C0D0; 
+}
+
+#projects{
+    background-color: #CCD3CA;
+}
+
+#projects li{
+    list-style-type: none;
+}
+
+#experience{
+    background-color: #EED3D9;
+}
+
+#certifications .certificate{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 350px;
+    padding: 2em;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer .footer-image{
+    width: 50px;
+    height: 50px;
+}
+
+.footer img:hover{
+    width: 70px;
+    height:70px;
+}
+
+  @media only screen and (max-width: 500px) {
+    .hamburger{
+        display: flex;
+    }
+    .navbar{
+        display: none;
+    }
+    #myimg img{
+        width:200px;
+        height: 250px;
+        margin-left: 5em;
+    }
+    .aboutme{
+        margin-left: 5em;
+    }
+    .details{
+        margin-top: 100px;
+        flex-direction: column;
+    }
+    .navbar.responsive{
+        display:flex;
+        flex-direction: column;
+        position:absolute;
+        left:0;
+        top:70px; 
+        border-top:transparent;
+        background-color: white;
+        width:100%;
+        z-index:2;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto; /* Reset rows for mobile */
+        grid-template-areas:
+            "section1"
+            "details"
+            "skills"
+            "projects"
+            "certifications";
+    }
+}

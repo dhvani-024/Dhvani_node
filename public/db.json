@@ -1,0 +1,56 @@
+{"medicines":[
+    {
+        "medicine_code":1,
+        "medicine_name":"Tylenol",
+        "medicine_price":10.99,
+        "medicine_quantity":2,
+        "medicine_stock":30,
+        "medicine_expiryDate":"01-20-2025",
+        "medicine_image": "https://images-na.ssl-images-amazon.com/images/I/81N6pRNEf2L._AC_SL1500_.jpg"
+    },
+    {
+        "medicine_code":2,
+        "medicine_name":"DayQuil",
+        "medicine_price":11.99,
+        "medicine_quantity":1,
+        "medicine_stock":40,
+        "medicine_expiryDate":"03-10-2025",
+        "medicine_image": "https://tse1.mm.bing.net/th?id=OIP.UxIiJjNrdxp5DYy-osCSvAHaHa&pid=Api&P=0&h=220"
+    },
+    {
+        "medicine_code":3,
+        "medicine_name":"NyQuil",
+        "medicine_price":11.49,
+        "medicine_quantity":1,
+        "medicine_stock":40,
+        "medicine_expiryDate":"09-24-2025",
+        "medicine_image":"https://i5.walmartimages.com/asr/0d29ee0b-23e6-4623-a923-541efca8e279.91b97b3ac549447dc54d47b548dcc6c5.jpeg"
+    },
+    {
+        "medicine_code":4,
+        "medicine_name":"Theraflu",
+        "medicine_price":13.99,
+        "medicine_quantity":3,
+        "medicine_stock":15,
+        "medicine_expiryDate":"11-16-2026",
+        "medicine_image":"https://i5.walmartimages.com/asr/364d89f7-87a1-41db-80d8-5f748b11d846.4753d98bf11b8e43d33a7220e68e8b88.jpeg"
+    },
+    {
+        "medicine_code":5,
+        "medicine_name":"Halls",
+        "medicine_price":2.99,
+        "medicine_quantity":5,
+        "medicine_stock":50,
+        "medicine_expiryDate":"10-03-2025",
+        "medicine_image":"https://i5.peapod.com/c/J5/J5OGL.png"
+    },
+    {
+        "medicine_code":6,
+        "medicine_name":"Sinex",
+        "medicine_price":6.99,
+        "medicine_quantity":2,
+        "medicine_stock":65,
+        "medicine_expiryDate":"08-19-2026",
+        "medicine_image":"https://images.heb.com/is/image/HEBGrocery/002044660"
+    }
+]}
