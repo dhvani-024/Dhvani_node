@@ -39,7 +39,7 @@ http.createServer(async (req,res)=>{
         console.log(req.url);
         let contentType;
         let fileTrack = path.join(__dirname,"public",req.url==="/"? "index.html": req.url);
-        let fileExpansion = path.extname(filePath);
+        let fileExpansion = path.extname(fileTrack);
         switch(fileExpansion){
             case ".html":
                 contentType = "text/html";
